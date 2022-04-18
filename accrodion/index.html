@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ==============FONT AWESOME ICON CDN====================== -->
+    <script src="https://kit.fontawesome.com/d2dcb326ad.js" crossorigin="anonymous"></script>
+    <!-- ===================CSS LINK=================== -->
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Accrodion</title>
+</head>
+
+<body>
+
+    <div class="accrodion">
+
+        <div class="card">
+            <div class="card-header">
+                <h3>Heading One</h3>
+                <span><i class="fa fa-minus"></i></span>
+            </div>
+            <div class="card-body active">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat voluptatibus non velit placeat
+                    aperiam harum, cupiditate in quaerat enim quod hic alias quis iure? Sapiente delectus dolores
+                    consectetur praesentium repellendus?</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <h3>Heading Two</h3>
+                <span><i class="fa fa-plus"></i></span>
+            </div>
+            <div class="card-body">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat voluptatibus non velit placeat
+                    aperiam harum, cupiditate in quaerat enim quod hic alias quis iure? Sapiente delectus dolores
+                    consectetur praesentium repellendus?</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <h3>Heading Three</h3>
+                <span><i class="fa fa-plus"></i></span>
+            </div>
+            <div class="card-body">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat voluptatibus non velit placeat
+                    aperiam harum, cupiditate in quaerat enim quod hic alias quis iure? Sapiente delectus dolores
+                    consectetur praesentium repellendus?</p>
+            </div>
+        </div>
+
+    </div>
+    <!-- jQuery Link  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".card-header").click(function () {
+                if ($(this).next(".card-body").hasClass('active')) {
+                    $(this).next(".card-body").removeClass('active').slideUp()
+                    $(this).children("span").removeClass("fa-minus").addClass("fa-plus")
+                }
+                else {
+                    $(".card .card-body").removeClass('active')
+                    $(".card .card-header span").removeClass("fa-minus").addClass("fa-plus");
+                    $(this).next(".card-body").addClass('active').slideDown()
+                    $(this).children("span").removeClass("fa-plus").addClass("fa-minus")
+                }
+            })
+        })
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ===================CSS Style Sheet Link==================== -->
+    <link rel="stylesheet" href="CSS/Style.css">
+    <!-- ===================Bootsrtap CDN==================== -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- form section  -->
+    <section class=" w-50 mx-auto">
+        <h1 class="text-info text-center fw-bolder fs-1 mt-4">Book List</h1>
+        <form id="book-form" class="form-control p-4 mt-5">
+            <!-- Title  -->
+            <div class="form-group">
+                <label for="title" class="fs-5 pb-2">Title :-</label>
+                <input type="text" class="form-control mb-2" name="title" placeholder="Enter The Book Title" id="title">
+            </div>
+            <!-- Autor -->
+            <div class="form-group">
+                <label for="author" class="fs-5 pb-2">Author :-</label>
+                <input type=" text" class="form-control mb-2" name="author" placeholder="Enter The Book Author"
+                    id="author">
+            </div>
+            <!-- Year -->
+            <div class="form-group">
+                <label for="year" class="fs-5 pb-2">Year :-</label>
+                <input type="text" name="year" class="form-control mb-2" placeholder="Enter The Book Publish Year"
+                    id="year">
+            </div>
+            <input type="submit" class="btn btn-info w-100 mt-3 text-white fw-bolder" value="Add Book" id="bookBtn">
+        </form>
+
+        <!-- table  -->
+        <div class="mt-4">
+            <table class="table table-striped table-hover text-center">
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Author</th>
+                        <th>Year</th>
+                    </tr>
+                </thead>
+                <tbody class="''" id="book-list">
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- ===============JavaScript LINK=================== -->
+    <script src="JS/app.js"></script>
+</body>
+
+</html>

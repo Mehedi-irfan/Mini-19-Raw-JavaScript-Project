@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: cursive;
+}
+* {
+  box-sizing: border-box;
+}
+.accrodion {
+  max-width: 600px;
+  display: block;
+  margin: 100px auto;
+}
+.accrodion .card {
+  box-shadow: 0px 0px 20px #d4d4d4;
+  margin-bottom: 20px;
+  float: left;
+  width: 100%;
+}
+.accrodion .card .card-header h3 {
+  cursor: pointer;
+  color: #ffffff;
+  background-color: #3343a2;
+  position: relative;
+  margin: 0;
+  padding: 20px;
+}
+.accrodion .card .card-header {
+  position: relative;
+}
+
+.accrodion .card .card-header span {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  height: 30px;
+  width: 30px;
+  background-color: #ffffff;
+  color: #3343a2;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 30px;
+  font-size: 15px;
+}
+.accrodion .card .card-body {
+  padding: 20px;
+}
+.accrodion .card .card-body {
+  display: none;
+}
+/* open one card  */
+.accrodion .card:nth-child(1) .card-body {
+  display: block;
+}
+.accrodion .card .card-body p {
+  color: #444444;
+  font-size: 16px;
+  line-height: 25px;
+  margin: 0;
+}

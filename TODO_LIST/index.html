@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ==================CSS Link================ -->
+    <link rel="stylesheet" href="CSS/style.css">
+    <!-- ==============Font Awesome================ -->
+    <script src="https://kit.fontawesome.com/d2dcb326ad.js" crossorigin="anonymous"></script>
+    <title>TODO LIST</title>
+</head>
+
+<body>
+    <header>
+        <h1>TODO LIST</h1>
+    </header>
+    <form>
+        <input type="text" id="todo-input">
+        <button type="submit" class="todo-button">
+            <i class="fas fa-plus-square"></i>
+        </button>
+        <div class="select">
+            <select name="todos" id="filter-todo">
+                <option value="All">All</option>
+                <option value="Complete">Complete</option>
+                <option value="UnComplete">UnComplete</option>
+            </select>
+        </div>
+    </form>
+    <div class="todo-container">
+        <ul class="todo-list"></ul>
+    </div>
+    <!-- ==============JavaScript Link=================== -->
+    <script src="JS/app.js"></script>
+</body>
+
+</html>
